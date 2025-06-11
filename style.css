@@ -1,0 +1,109 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap'); */
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(125deg, #ff6ec4, #7873f5);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz-container {
+  /* display: inline-block; */
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px #ff00cc;
+  width: 450px;
+  color: #fff;
+  text-align: center;
+  animation: popIn 0.5s ease-out;
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.6); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #00f0ff;
+}
+
+.answer-btn {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid #00ffe0;
+  border-radius: 12px;
+  background-color: #111;
+  color: #0ff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 10px #00ffe0;
+}
+
+.answer-btn:hover {
+  background-color: #0ff;
+  color: #000;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #0ff;
+}
+
+.answer-btn.correct {
+  background-color: #00ff88;
+  color: #000;
+  box-shadow: 0 0 20px #00ff88;
+}
+
+.answer-btn.incorrect {
+  background-color: #ff0044;
+  color: #fff;
+  box-shadow: 0 0 20px #ff0044;
+}
+
+#next-btn {
+  margin-top: 15px;
+  padding: 12px 25px;
+  font-size: 18px;
+  background: linear-gradient(90deg, #00ff88, #00ffe0);
+  color: #000;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); }
+}
+
+#feedback {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: all 0.3s;
+}
+
+#result {
+  font-size: 22px;
+  text-shadow: 0 0 10px #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+li{
+    list-style-type: none;
+    text-align: center;
+    padding-right: 20px;
+}
